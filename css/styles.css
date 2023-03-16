@@ -10,7 +10,7 @@
 }
 
 body {
-    background-color: var(--blue);
+    background-color: var(--gray);
     font-family: 'Karla', sans-serif;
     font-size: 16px;
     margin: 0;
@@ -23,12 +23,35 @@ main {
     display: grid;
 }
 
+
+
 .box1 {
-    background-color: var(--gray);
+    background-color: white;
     grid-column-start: 1;
     grid-column-end: 3;
     padding: 10px;
-    border-radius: 8px;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.box1 h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--cyan);
+    padding: 0px 40px;
+}
+
+.box1 h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--yellow);
+    padding: 0px 40px;
+}
+
+.box1 p {
+    font-size: 16px;
+    font-weight: normal;
+    color: var(--blue);
+    padding: 0px 40px;
 }
 
 .box2 {
@@ -36,7 +59,20 @@ main {
     grid-column-start: 1;
     grid-column-end: 2;
     padding: 10px;
-    border-radius: 8px;
+    border-radius: 0px 0px 0px 8px;
+}
+
+.box2 h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    padding: 0px 40px;
+}
+.box2 p {
+    font-size: 16px;
+    font-weight: normal;
+    color: white;
+    padding: 0px 40px;
 }
 
 .box3 {
@@ -44,12 +80,23 @@ main {
     grid-column-start: 2;
     grid-column-end: 3;
     padding: 10px;
-    border-radius: 8px;
+    border-radius: 0px 0px 8px 0px;
+}
+.box3 h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    padding: 0px 40px;
+}
+.box3 p {
+    font-size: 14px;
+    font-weight: normal;
+    color: white;
+    padding: 0px 40px;
 }
 .container {
     width: 635px;
     height: 475px;
-    background-color: var(--gray);
     border-radius: 8px;
     place-self: center;
     display: grid;
