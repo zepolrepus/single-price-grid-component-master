@@ -19,7 +19,7 @@ body {
 
 main {
     width: 100%;
-    min-height: 100vh;
+    min-height: 96vh;
     display: grid;
 }
 
@@ -136,4 +136,29 @@ main {
     justify-items: stretch;
     align-items: stretch;
     box-shadow: .1rem .1rem .9rem .2rem  rgba(150, 148, 148, 0.25);
+}
+
+@media screen and (max-width: 680px){
+    .container{
+        width: 318px;
+        height: 777px;
+        grid-template-columns: 318px;
+        grid-template-rows: 259px 259px 259px;
+    }
+
+    .box1 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        border-radius: 8px 8px 0px 0px;
+    }
+    .box2 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        border-radius: 0px 0px 0px 0px;
+    }
+    .box3 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        border-radius: 0px 0px 8px 8px;
+    }
 }
