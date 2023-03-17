@@ -2,11 +2,11 @@
 
 :root {
     --cyan: hsl(179, 62%, 43%);
-    --cyan-t: hsla(179, 62%, 43%, 0.5);
     --yellow: hsl(71, 73%, 54%);
     --gray: hsl(204, 43%, 93%);
     --blue: hsl(218, 22%, 67%);
     
+    --padding: 15px;
 }
 
 body {
@@ -29,7 +29,7 @@ main {
     background-color: white;
     grid-column-start: 1;
     grid-column-end: 3;
-    padding: 10px;
+    padding: var(--padding);
     border-radius: 8px 8px 0px 0px;
 }
 
@@ -37,28 +37,28 @@ main {
     font-size: 24px;
     font-weight: bold;
     color: var(--cyan);
-    padding: 0px 40px;
+    padding: 0px var(--padding);
 }
 
 .box1 h2 {
     font-size: 18px;
     font-weight: bold;
     color: var(--yellow);
-    padding: 0px 40px;
+    padding: 0px var(--padding);
 }
 
 .box1 p {
     font-size: 16px;
     font-weight: normal;
     color: var(--blue);
-    padding: 0px 40px;
+    padding: 0px var(--padding);
 }
 
 .box2 {
     background-color: var(--cyan);
     grid-column-start: 1;
     grid-column-end: 2;
-    padding: 10px;
+    padding: var(--padding);
     border-radius: 0px 0px 0px 8px;
 }
 
@@ -66,33 +66,65 @@ main {
     font-size: 18px;
     font-weight: bold;
     color: white;
-    padding: 0px 40px;
+    padding: 0px var(--padding);
 }
 .box2 p {
     font-size: 16px;
     font-weight: normal;
     color: white;
-    padding: 0px 40px;
+    padding: 0px var(--padding);
 }
 
+.box2 p .dollar {
+    font-size: 32px;
+    font-weight: normal;
+    color: white;
+}
+
+.box2 p .month {
+    font-size: 16px;
+    font-weight: normal;
+    color: white;
+    opacity: 0.5;
+    padding-left: 5px;
+}
+.button {
+    width: 237px;
+    background-color: var(--yellow);
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    margin: var(--padding);
+    padding: 15px 0px;
+    border-radius: 5px;
+    display: inline-block;
+    box-shadow: -2px 7px 10px 1px var(--cyan) ;
+}
+
+
 .box3 {
-    background-color: var(--cyan-t);
+    background-color: var(--cyan);
     grid-column-start: 2;
     grid-column-end: 3;
-    padding: 10px;
+    padding: var(--padding);
     border-radius: 0px 0px 8px 0px;
+    opacity: 0.5
+
 }
 .box3 h2 {
     font-size: 18px;
     font-weight: bold;
     color: white;
-    padding: 0px 40px;
+    padding: 0px var(--padding);
 }
 .box3 p {
     font-size: 14px;
     font-weight: normal;
+    width: 200px;
     color: white;
-    padding: 0px 40px;
+    line-height: 20px;
+    padding: 0px var(--padding);
 }
 .container {
     width: 635px;
@@ -104,4 +136,5 @@ main {
     grid-template-rows: 216px 259px;
     justify-items: stretch;
     align-items: stretch;
+    box-shadow: var(--blue) 0px 7px 29px 0px;
 }
