@@ -99,9 +99,8 @@ main {
     padding: 15px 0px;
     border-radius: 5px;
     display: inline-block;
-    box-shadow: -2px 7px 10px 1px var(--cyan) ;
+    box-shadow: .1rem .1rem .9rem .2rem  rgba(92, 90, 90, 0.25);
 }
-
 
 .box3 {
     background-color: var(--cyan);
@@ -109,7 +108,7 @@ main {
     grid-column-end: 3;
     padding: var(--padding);
     border-radius: 0px 0px 8px 0px;
-    opacity: 0.5
+    opacity: 0.75
 
 }
 .box3 h2 {
@@ -136,5 +135,5 @@ main {
     grid-template-rows: 216px 259px;
     justify-items: stretch;
     align-items: stretch;
-    box-shadow: var(--blue) 0px 7px 29px 0px;
+    box-shadow: .1rem .1rem .9rem .2rem  rgba(150, 148, 148, 0.25);
 }
